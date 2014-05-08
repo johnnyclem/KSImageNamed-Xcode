@@ -131,12 +131,16 @@ NSString * const KSShowExtensionInImageCompletionDefaultKey = @"KSShowExtensionI
     
     NSSet *completionStrings = nil;
     
-    if (type == KSImageNamedCompletionStringTypeClassAndMethod) {
-        completionStrings = classAndMethodCompletionStrings;
-    } else if (type == KSImageNamedCompletionStringTypeMethodDeclaration) {
-        completionStrings = methodDeclarationCompletionStrings;
-    } else if (type == KSImageNamedCompletionStringTypeMethodName) {
-        completionStrings = methodNameCompletionStrings;
+    switch (type) {
+        case KSImageNamedCompletionStringTypeClassAndMethod:
+            completionStrings = classAndMethodCompletionStrings;
+            break;
+        case KSImageNamedCompletionStringTypeMethodDeclaration:
+            completionStrings = methodDeclarationCompletionStrings;
+            break;
+        case KSImageNamedCompletionStringTypeMethodName:
+            completionStrings = methodNameCompletionStrings;
+            break;
     }
     
     return completionStrings;

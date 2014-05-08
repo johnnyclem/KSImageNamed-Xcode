@@ -11,7 +11,7 @@
 typedef NS_ENUM(NSInteger, KSImageNamedCompletionStringType) {
     KSImageNamedCompletionStringTypeClassAndMethod = 0,
     KSImageNamedCompletionStringTypeMethodDeclaration = 1,
-    KSImageNamedCompletionStringTypeMethodName = 2,
+    KSImageNamedCompletionStringTypeMethodName = 2
 };
 
 @class KSImageNamedPreviewWindow;

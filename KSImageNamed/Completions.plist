@@ -4,6 +4,16 @@
 <array>
 	<dict>
 		<key>classAndMethod</key>
+		<string>dentifier isEqualToString:</string>
+		<key>methodDeclaration</key>
+		<string> isEqualToString:</string>
+		<key>methodName</key>
+		<string>isEqualToString</string>
+		<key>comment</key>
+		<string>Identifier checking in prepareForSegue:</string>
+	</dict>
+	<dict>
+		<key>classAndMethod</key>
 		<string>mage imageNamed:</string>
 		<key>methodDeclaration</key>
 		<string> imageNamed:</string>
